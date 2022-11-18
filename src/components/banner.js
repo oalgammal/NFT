@@ -184,29 +184,31 @@ function Banner({
   addTextAsOverlay
 }) {
   return (
-    <Outer className={addTextAsOverlay ? 'banner--withOverlay' : ''}>
-      <Content className="banner-content">
-        <div>
-          {!!title && <Title>{title}</Title>}
-          {!!description && (
-            <Description>
-              <ContentTransformer json={description} />
-            </Description>
-          )}
-          {!!link && (
-            <Button className="banner-button" href={link}>
-              {linkText}
-            </Button>
-          )}
-        </div>
-      </Content>
-      <Img className="banner-media">
-        <CrystallizeImage
-          {...image?.[0]}
-          sizes="(max-width: 700px) 100vw, 1200px"
-        />
-      </Img>
-    </Outer>
+    <>
+      {/*  <Outer className={addTextAsOverlay ? 'banner--withOverlay' : ''}>
+         <Content className="banner-content">
+           <div>
+             {!!title && <Title>{title}</Title>}
+             {!!description && (
+               <Description>
+                 <ContentTransformer json={description} />
+               </Description>
+             )}
+             {!!link && (
+               <Button className="banner-button" href={link}>
+                 {linkText}
+               </Button>
+             )}
+           </div>
+         </Content>
+         <Img className="banner-media">
+           <CrystallizeImage
+             {...image?.[0]}
+             sizes="(max-width: 700px) 100vw, 1200px"
+           />
+         </Img>
+       </Outer> */}
+    </>
   );
 }
 

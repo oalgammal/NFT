@@ -65,7 +65,7 @@ export default function FolderPage({ folder, hideHeader }) {
           />
         ))}
 
-      <Stackable stacks={stacks} />
+        {/* <Stackable stacks={stacks} /> */}
       <List>
         {children
           ?.filter((c) => !isFolderType(c))
